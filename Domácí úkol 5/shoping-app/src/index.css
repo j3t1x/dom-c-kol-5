@@ -1,0 +1,27 @@
+/* Základní styly */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styly pro světlý režim */
+body.light {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+/* Styly pro tmavý režim */
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Pro kódové bloky (pokud nějaké máte) */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,207 @@
+/* ShoppingListsPage.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+body.light .shopping-lists-page {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.dark .shopping-lists-page {
+  background-color: #121212;
+  color: #ddd;
+}
+
+body.dark .shopping-list-card {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+}
+
+body.dark .shopping-list-title {
+  color: #76a9ff;
+}
+
+body.dark .add-button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark .add-button:hover {
+  background-color: #666;
+}
+
+
+
+.shopping-lists-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.shopping-lists-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.shopping-list-card {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(33.33% - 10px);
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-list-title {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.shopping-list-title:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #dc3545;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #c82333;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.confirm-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.archive-button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.archive-button:hover {
+  background-color: #e0a800;
+}
+/* Base styles */
+.toggle-view-button {
+  background-color: #28a745; /* Primary button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-view-button:hover {
+  background-color: #218838;
+}
+
+/* Dark mode */
+body.dark .toggle-view-button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark .toggle-view-button:hover {
+  background-color: #666;
+}
